@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ball Bouncing Game</title>
+        <link rel="stylesheet" href="gamming.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <canvas id="gameBox" width="600px" height="300px"> </canvas>
+            </section>
+            <section id="controller">
+                <div class="row press">
+                    <input type="range" id="speed" min="17" max="100" step="10">
+                    <p>Speed Controller</p>
+                </div>
+                <div class="row press">
+                    <input type="checkbox" id="pause" class="cbx hidden" checked/>
+                    <label for="pause" class="lbl"></label>
+                    <p>Pause / Resume</p>
+                </div>
+                <div class="row press">
+                    Last 1 Min Collision Count:
+                    <p id="everyMinCount"></p>
+                </div>
+                <div class="row press">
+                    Current Collisions
+                    <p id="currentCount"> </p>
+                </div>
+            </section>
+        </main>            
+        <script src="gamming.js"></script>
+    </body>
+</html>
